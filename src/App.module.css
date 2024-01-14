@@ -1,0 +1,96 @@
+.wrapper {
+  max-width: 46rem;
+  margin: -2rem auto;
+  padding: 0 1rem;
+}
+
+.tasksInfo {
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.createdTasks {
+  color: var(--blue);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.createdTasks > span {
+  color: var(--white);
+  padding: 2px 8px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  background: #333;
+}
+
+.completedTasks > span {
+  color: var(--white);
+  padding: 2px 8px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  background: #333;
+}
+
+.completedTasks {
+  color: var(--purple);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+.inputWrapper {
+  display: flex;
+  gap: .5rem;
+}
+
+.inputWrapper input {
+  width: 38rem;
+  height: 4rem;
+  border-radius: 8px;
+  border: 1px solid var(--gray-700);
+  background: var(--gray-500);
+  padding: 1rem;
+  color: var(--gray-100);
+}
+
+.inputWrapper input:focus {
+  border: 1px solid var(--purple-dark);
+}
+
+.inputWrapper button {
+  width: 6rem;
+  padding: 16px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+
+  background: var(--blue-dark);
+  color: var(--gray-100);
+  font-size: 14px;
+  font-weight: bold;
+
+  transition: background-color 0.2s;
+  gap: 8px;
+}
+
+.inputWrapper button:hover {
+  background: var(--blue);
+}

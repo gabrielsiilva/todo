@@ -1,0 +1,42 @@
+.wrapper {
+  display: flex;
+  padding: 64px 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  align-self: stretch;
+
+  border-radius: 8px;
+  border-top: 1px solid var(--Grey-400, #333);
+}
+
+.wrapper img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.wrapper div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.wrapper div strong {
+  color: var(--gray-300, #808080);
+  text-align: center;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 140%; /* 22.4px */
+}
+
+.wrapper div span {
+  color: var(--Gray-300, #808080);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
